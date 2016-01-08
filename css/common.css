@@ -1,0 +1,673 @@
+@charset "utf-8";
+/* CSS Document */
+/* --------------------------------------------------
+clearfix
+-------------------------------------------------- */
+nav ul,#Area03 .inner {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+nav ul:after, #Area03 .inner:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: ".";
+	font-size: 0.1em;
+}
+
+.clearfix:after {
+	content: ".";
+	/* 新しい要素を作る */
+	display: block;
+	/* ブロックレベル要素に */
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	font-size: 0.1em;
+	line-height: 0;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+* html .clearfix {
+	height: 1px;
+	/*¥*/
+	/*/
+	height: auto;
+	overflow: hidden;
+	/**/
+}
+
+.both {
+	clear: both;
+}
+
+.inline_block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+/* --------------------------------------------------
+resetCss
+-------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* よく使うCSS start　最後消す
+
+img {
+	max-width:100%;
+}
+
+table {
+	width:100%;
+}
+
+a,a:hover {
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+}
+
+a img:hover {
+	filter: alpha(opacity=75);
+	-moz-opacity:0.75;
+	opacity:0.75;
+}
+
+よく使うCSS end -----
+時々使うCSS3 start ---
+
+テキストシャドウ {
+	text-shadow: 1px 1px 3px #000;
+}
+
+テキストシャドウ {
+	text-shadow: 1px 1px 3px #000;
+}
+
+ボックスシャドウ {
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+ボックスシャドウ内側 {
+	-moz-box-shadow: inset 1px 1px 3px #000;
+	-webkit-box-shadow: inset 1px 1px 3px #000;
+	box-shadow: inset 1px 1px 3px #000;
+}
+
+角丸 {
+	border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; 
+}
+
+トランジション {
+	-webkit-transition: 1.5s;
+	-moz-transition: 1.5s;
+	-o-transition: 1.5s;
+	transition: 1.5s;
+}
+
+透明 {
+	filter: alpha(opacity=25);
+	-moz-opacity:0.25;
+	opacity:0.25;
+}
+
+背景のみ透明 {
+	background-color:rgba(255,255,255,0.2);
+}
+
+グラデーション {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000')";
+	background-image: -moz-linear-gradient(top, #ffffff, #000000);
+	background-image: -ms-linear-gradient(top, #ffffff, #000000);
+	background-image: -o-linear-gradient(top, #ffffff, #000000);
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#000000));
+	background-image: -webkit-linear-gradient(top, #ffffff, #000000);
+	background-image: linear-gradient(top, #ffffff, #000000);
+}
+
+スマホ対応
+@media screen and (max-width: 480px){
+	
+}
+@media screen and (max-width: 320px){
+	
+}
+
+時々使うCSS3 end */
+/* = Mycustom
+-------------------------------------------------- */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	background: #000;
+}
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: aliased;
+}
+
+body {
+	font-family: 'メイリオ', Meiryo, 'Lucida Grande', Verdana, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
+	word-wrap: break-word;
+	font-size: 62.5%;/* -- 標準10px -- */
+	line-height: 1.4;
+	background-color: #FFF;
+	width: 100%;
+	letter-spacing: .05em;
+	color: #333333;
+}
+
+input, button, textarea, select {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+.table {
+	display: table;
+}
+
+.table > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #fff;
+}
+a, a:hover {
+	-o-transition: color 0.25s ease-in;
+	-webkit-transition: color 0.25s ease-in;
+	-moz-transition: color 0.25s ease-in;
+	transition: color 0.25s ease-in;
+}
+
+h1 { font-size: 2em; } /* =20px */
+h2 { font-size: 1.6em; } /* =16px */
+h3 { font-size: 1.5em; } /* =16px */
+p { font-size: 1.6em; } /* =14px */
+li li, li p, address, ul li a /* etc */ { font-size: 1em; }
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+img a {
+	border: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+/* = Selected Text
+----------------------------------------------- */
+::selection {
+  background: #afe0e5;
+  /* Safari */
+  color: #000;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #afe0e5;
+  /* Firefox */
+  color: #000;
+  text-shadow: none;
+}
+
+/*Webkit*/
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/*Firefox 19以降*/
+::-moz-placeholder {
+  color: #ccc;
+}
+
+/*Firefox 18以前*/
+:-moz-placeholder {
+  color: #ccc;
+}
+
+/*Windows IE*/
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/* = perts
+-------------------------------------------------- */
+.inner {
+	width: 94%;
+	margin: 0 auto;
+}
+
+/* = font
+-------------------------------------------------- */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?vz29s3');
+	src:url('../fonts/icomoon.eot?#iefixvz29s3') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?vz29s3') format('truetype'),
+		url('../fonts/icomoon.woff?vz29s3') format('woff'),
+		url('../fonts/icomoon.svg?vz29s3#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* = header
+-------------------------------------------------- */
+header {
+	position:relative;
+	padding-bottom: 3em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b962d+0,5fca4f+100 */
+	background: #3b962d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3b962d 0%, #5fca4f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b962d), color-stop(100%,#5fca4f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3b962d 0%,#5fca4f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b962d', endColorstr='#5fca4f',GradientType=0 ); /* IE6-9 */
+}
+
+/* 
+header .inner:before {
+	position: absolute;
+	top:0;
+	left: 0;
+	content:"■";
+	width: 320;
+	height: 160;
+	border-style: solid;
+	border-width: 250px 250px 0 250px;
+	border-color: #3b962d transparent transparent transparent;
+}
+*/
+header h1 {
+	padding-top: 1.5em;
+	text-align: center;
+	color: #fff;
+	font-size:3.2em;
+}
+
+
+
+/* = nav
+-------------------------------------------------- */
+nav {
+	bottom: 0;
+	left:0;
+	width: 100%;
+	padding-bottom: 8em;
+}
+nav ul li {
+	font-size: 1.2em;
+	float: left;
+	width:50%;
+	background: #fff;
+	border-right: 2px solid #43A235;
+	border-bottom: 2px solid #43A235;
+	display: table;
+	text-align: center;
+}
+nav ul li a{
+	padding: 0.7em 0;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 1.2em;
+	color: #000;
+}
+nav ul li a:after {
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 5em;
+	font-size: 6em\9;
+	display: block;
+	text-align: center;
+}
+
+nav ul li.nav01 a:after {
+	content: "\e606";
+	color:#3B962D;
+}
+
+nav ul li.nav01 a:after {
+	content: "\e606";
+	color:#3B962D;
+}
+
+nav ul li.nav02 a:after {
+	content: "\e605";
+	color:#EA541C;
+}
+
+nav ul li.nav03 a:after {
+	content: "\e604";
+	color:#EA68A2;
+}
+
+nav ul li.nav04 a:after {
+	content: "\e603";
+	color:#4587C5;
+}
+
+nav ul li a:hover {
+	color: #000;
+}
+
+
+
+/* = contents
+-------------------------------------------------- */
+
+
+
+/* = pagetop
+-------------------------------------------------- */
+#page-top {
+	position: fixed;
+	bottom: 162px;
+	right: 2%;
+	font-size: 86%;
+}
+#page-top a {
+	background-color:rgba(102,102,102,0.85);
+	text-decoration: none;
+	color: #fff;
+	width: 68px;
+	height: 68px;
+	padding-top:45%;
+	text-align: center;
+	display: block;
+	border-radius: 68px; 
+	-webkit-border-radius: 68px;
+	-moz-border-radius: 68px; 
+	}
+#page-top a:hover {
+	text-decoration: none;
+	background: #999;
+}
+
+
+
+/* = footer
+-------------------------------------------------- */
+footer {
+	padding: 1.4em 0;
+	color: #fff;
+	background: #000;
+}
+
+footer h1 {
+	font-size: 1.7em;
+	padding: 0 0 0.8em;
+}
+
+footer h1:before {
+	font-family: 'icomoon';
+	display: block;
+	color: #fff;
+	font-size: 1em;
+	font-size: 1em\9;
+	vertical-align: middle;
+	text-align: center;
+	content: "\e602";
+	padding-right: 0.3em;
+}
+
+footer ul li {
+	font-size: 1.2em;
+}
+
+footer p small{
+	font-size: 0.8em;
+}
+
+footer a {
+	text-decoration: underline;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+/* = header
+-------------------------------------------------- */
+
+header {
+	padding-bottom: 0;
+}
+
+header h1 {
+	font-size:5em;
+	padding-bottom: 2em;
+}
+
+
+
+/* = contents
+-------------------------------------------------- */
+.fl_R {
+	float: right;
+}
+
+.fl_L {
+	float: left;
+}
+
+
+
+/* = footer
+-------------------------------------------------- */
+footer h1:before {
+	display: inline-block;
+	color: #fff;
+	font-size: 1em;
+	font-size: 1em\9;
+	vertical-align: middle;
+	text-align:left;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* = perts
+-------------------------------------------------- */
+
+
+
+/* = header
+-------------------------------------------------- */
+
+
+
+/* = nav
+-------------------------------------------------- */
+nav {
+	max-width:1080px;
+	margin: 0 auto;
+}
+nav ul li {
+	width:20%;
+	margin: 2.5%;
+	background: none;
+	border-right: none;
+	border-bottom: none;
+}
+nav ul li a{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+	background: #fff;
+	margin: 5px;
+	text-align: center;
+}
+
+nav ul li.nav01 a:hover:after,
+nav ul li.nav02 a:hover:after,
+nav ul li.nav03 a:hover:after,
+nav ul li.nav04 a:hover:after {
+	color:#fff;
+}
+
+nav ul li.nav01 a:hover{
+	background: #3B962D;
+}
+
+nav ul li.nav02 a:hover{
+	background: #EA541C;
+}
+
+nav ul li.nav03 a:hover{
+	background: #EA68A2;
+}
+
+nav ul li.nav04 a:hover{
+	background:#4587C5;
+}
+
+
+
+/* = pagetop
+-------------------------------------------------- */
+#page-top {
+	bottom: 20px;
+	right: 20px;
+	font-size: 88%;
+}
+#page-top a {
+	width: 100px;
+	padding: 30px 0;
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px; 
+	}
+#page-top a:hover {
+	text-decoration: none;
+	background: #999;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 960px) {
+/* = perts
+-------------------------------------------------- */
+.inner {
+	max-width:1080px;
+	margin: 0 auto;
+}
+
+
+
+/* = header
+-------------------------------------------------- */
+
+
+
+/* = nav
+-------------------------------------------------- */
+
+
+
+}
+

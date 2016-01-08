@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* CSS Document */
+
+section {
+	padding: 2em 0.5em;
+}
+
+
+/* = header
+-------------------------------------------------- */
+header h1{
+	background: url(../img/top/header_bg_arrow.png) no-repeat center top;
+	background-size: contain;
+	margin: -0.5em auto 0;
+	padding-bottom: 0.5em;
+}
+
+
+
+/* = section#Area01
+-------------------------------------------------- */
+#contentsArea #Area01 {
+	background: url(../img/top/top_bak01.jpg) no-repeat top center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	text-align: center;
+	position: relative;
+}
+#contentsArea #Area01 h2 {
+	position: relative;
+	width: 172px;
+	margin: 0 auto;
+	padding-top: 19px;
+	top:-35px;
+	z-index: 2;
+	color: #fff;
+	font-size: 2em;
+	font-weight: bold;
+}
+.diamond {
+	position: absolute;
+	z-index: 1;
+	top:-19px;
+	left: 50%;
+	margin-left: -86px;
+	width: 125px;
+	height: 125px;
+	background: #419934;
+	margin: 0 0 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+	-webkit-box-shadow: 0 0 5px 0 #fff; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 5px 0 #fff; /* Firefox用 */
+	box-shadow: 0 0 5px 0 #fff; /* CSS3 */
+}
+
+#contentsArea #Area01 .inner {
+}
+
+#contentsArea #Area01 ul li:first-child {
+	padding-top: 3.6em;
+}
+
+#contentsArea #Area01 ul li{
+	font-size: 1.6em;
+	margin-bottom: 1em;
+}
+
+
+/* = section#Area02
+-------------------------------------------------- */
+#contentsArea #Area02 {
+	background:#EA541C;
+	color: #fff;
+	text-align: center;
+}
+
+#contentsArea #Area02 .inner {
+	background: url(../img/top/area2_bac.png) no-repeat center bottom;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	min-height: 436px;
+}
+
+#contentsArea #Area02 h2 {
+	font-size:2.8em;
+	background: url(../img/top/area02_bg_arrow.png) no-repeat center top;
+	background-size: contain;
+	margin: -0.68em auto 0;
+	padding: 0.5em 0;
+}
+
+#contentsArea #Area02 ul {
+	margin-top: 2em;
+}
+
+#contentsArea #Area02 ul li{
+	line-height: 1.6;
+	font-size: 1.6em;
+}
+
+
+/* = section#Area03
+-------------------------------------------------- */
+#contentsArea #Area03 {
+	background: url(../img/top/top_bak02.jpg) no-repeat top center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+}
+
+#contentsArea #Area03 h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#contentsArea #Area03 .box{
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+#contentsArea #Area03 .colorA{
+	color: #fff;
+	background: #EA68A2;
+}
+
+#contentsArea #Area03 .colorB{
+	color:#EA68A2;
+	background: #fff;
+}
+
+#wrap #contentsArea #Area03 .inner #Area03_box p {
+	background: url(../img/top/area3_bac.png) no-repeat center bottom;
+	-webkit-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	max-width: 292px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#wrap #contentsArea #Area03 .inner #Area03_box p span{
+	border: 1px solid #fff;
+	padding: 0.1em 0.3em;
+}
+
+#wrap #contentsArea #Area03 .inner #Area03_box p:after {
+	content:"";
+	display: block;
+	padding-top:50%;
+}
+
+#wrap #contentsArea #Area03 .inner #Area03_box ul {
+	text-align: center;
+}
+
+.box.box02 p{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#contentsArea #Area03 .colorA p,
+#contentsArea #Area03 .colorA ul {
+	font-size: 1.6em;
+}
+
+#contentsArea #Area03 .colorB h3 {
+	font-size: 1.8em;
+}
+
+#contentsArea #Area03 .colorB h3:before {
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 1em;
+	font-size: 1em\9;
+	vertical-align: middle;
+	content: "\e601";
+	color:#000;
+	padding-right: 0.3em;
+	padding-bottom: 0.2em;
+}
+
+#contentsArea #Area03 .colorB ul {
+	font-size: 1.6em;
+}
+
+
+
+/* = section#Area04
+-------------------------------------------------- */
+#contentsArea #Area04 {
+	position: relative;
+	background:#4587C5;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 0;
+}
+
+#contentsArea #Area04 .innerWrap {
+	position: relative;
+	width: 100%;
+}
+
+#contentsArea #Area04 .innerWrap:after {
+	content:"";
+	position:absolute;
+	z-index:1000;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(../img/top/area4_bac.png) no-repeat;
+	background-size: contain;
+}
+
+#contentsArea #Area04 h2 {
+	font-size:2.8em;
+}
+
+#contentsArea #Area04 h2:after {
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 3em;
+	font-size: 3em\9;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	content: "\e603";
+	color:#1C3A57;
+}
+
+#contentsArea #Area04 p {
+	text-shadow: 2px 2px 3px #fff;
+	font-size: 2.2em
+}
+
+#contentsArea #Area04 ul li{
+	line-height: 1.6;
+	font-size: 1.6em;
+}
+
+
+
+/* = section#Area05
+-------------------------------------------------- */
+#contentsArea #Area05 {
+	position: relative;
+	background:#E8AF03;
+	color:#fff;
+}
+
+#contentsArea #Area05 .inner {
+	padding: 4em 0;
+}
+
+#contentsArea #Area05:after{
+	position: absolute;
+	left: 50%;
+	margin-left: -42px;
+	bottom: -39px;
+	content:" ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 39px 42px 0 42px;
+	border-color: #E8AF03 transparent transparent transparent;
+}
+
+#contentsArea #Area05 .Box {
+	margin-bottom: 2em;
+}
+
+#contentsArea #Area05 h2:before {
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 1em;
+	font-size: 1em\9;
+	vertical-align: middle;
+	content: "\e600";
+	color:#000;
+	padding-right: 0.3em;
+	padding-bottom: 0.2em;
+}
+
+#contentsArea #Area05 article {
+	border: 1px solid #fff;
+	padding: 2em;
+}
+
+#contentsArea #Area05 h2 {
+	font-size: 2em;
+	font-weight: bold;
+	line-height:1;
+}
+
+#contentsArea #Area05 p {
+	font-size: 1.6em;
+}
+
+#contentsArea #Area05 ul {
+	margin-top: 0.8em;
+}
+
+#contentsArea #Area05 ul li{
+	line-height: 1.6;
+	font-size: 1.6em;
+}
+
+
+
+/* = section#Area06
+-------------------------------------------------- */
+#contentsArea #Area06 {
+	padding: 0 0.5em;
+	text-align: center;
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b962d+0,5fca4f+100 */
+	background: #3b962d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3b962d 0%, #5fca4f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b962d), color-stop(100%,#5fca4f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3b962d 0%,#5fca4f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3b962d 0%,#5fca4f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b962d', endColorstr='#5fca4f',GradientType=0 ); /* IE6-9 */
+	-moz-box-shadow: 1px 1px 3px #777;
+	-webkit-box-shadow: 1px 1px 3px #777;
+	box-shadow: 1px 1px 3px #777;
+}
+
+#contentsArea #Area06 .inner {
+	padding: 5em 0;
+}
+
+#contentsArea #Area06 h2 {
+	font-size:3em;
+	padding-bottom: 0.6em;
+}
+
+#contentsArea #Area06 p {
+	text-shadow: 2px 2px 3px #fff;
+	font-size: 2.2em;
+	padding-bottom: 0.6em;
+}
+
+#contentsArea #Area06 ul li{
+	line-height: 1.6;
+	font-size: 1.6em;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+	
+header h1{
+	background-size: auto;
+	padding-bottom: 2em;
+}
+	
+#contentsArea #Area02 .inner {
+	background: url(../img/top/area2_bac.png) no-repeat center bottom;
+	background-size: 400px;
+}
+
+#contentsArea #Area02 h2 {
+	font-size:4em;
+	margin: -0.5em auto 0;
+}
+
+#contentsArea #Area02 ul {
+	margin-top: 4em;
+}
+
+#contentsArea #Area03{
+	padding: 5em;
+}
+
+#contentsArea #Area03 .fl_L {
+	width: 40%;
+}
+
+#contentsArea #Area03 .box{
+	padding: 2em;
+	margin-bottom: 3em;
+}
+
+#contentsArea #Area03 .colorA {
+}
+
+#contentsArea #Area03 .fl_R {
+	position: relative;
+	width:45%;
+}
+
+#contentsArea #Area03 .colorB:before {
+	position: absolute;
+	left: 3%;
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 6em;
+	font-size: 6em\9;
+	vertical-align: middle;
+	content: "\e601";
+	color:#1C3A57;
+}
+
+#contentsArea #Area03 .colorB {
+	padding-left: 9.5em;
+	margin-top: 10em;
+}
+
+#contentsArea #Area03 h2 {
+	font-size: 2.8em;
+	font-weight: normal;
+	padding-bottom:0.5em;
+}
+
+#contentsArea #Area03 .colorB h3:before {
+	display: none;
+}
+
+#contentsArea #Area03 .colorB p:before {
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 1em;
+	font-size: 1em\9;
+	vertical-align: middle;
+	content: "\e601";
+	color:#000;
+	padding-right: 0.3em;
+}
+
+#contentsArea #Area04 .innerWrap {
+	max-width:1200px;
+	margin: 0 auto;
+	height:100%;
+}
+
+#contentsArea #Area04 .innerWrap:after {
+}
+
+#contentsArea #Area04 h2 {
+	font-size:4em;
+}
+
+#contentsArea #Area05 .inner {
+	padding: 10em 0;
+}
+
+#contentsArea #Area05:after{
+	position: absolute;
+	left: 50%;
+	margin-left: -84px;
+	bottom: -70px;
+	content:" ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 78px 84px 0 84px;
+	border-color: #E8AF03 transparent transparent transparent;
+}
+
+#contentsArea #Area05 .Box {
+	position: relative;
+}
+
+#contentsArea #Area05 .Box:before {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	font-family: 'icomoon';
+	color: #EA5433;
+	font-size: 6em;
+	font-size: 6em\9;
+	vertical-align: middle;
+	content: "\e600";
+	color:#1C3A57;
+	margin-top: -0.5em;
+}
+
+#contentsArea #Area05 article {
+	margin-left: 100px;
+}
+
+#contentsArea #Area05 h2 {
+	font-size: 3em;
+}
+
+#contentsArea #Area05 h2:before {
+	display: none;
+}
+
+#contentsArea #Area06 .inner {
+	padding: 10em 0;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+.bg_hed_box {
+	background: url(../img/top/header_bg.png) no-repeat center top;
+}
+
+.bg_area06_box{
+	background: url(../img/top/area6_bac.png) no-repeat center top;
+}
+
+}
+
+
